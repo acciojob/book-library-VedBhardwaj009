@@ -8,83 +8,99 @@
       body {
         background-color: #f8f8f8;
         font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
       }
-    .book-library {
-      display: flex;
-      flex-direction: column;
-    }
-    .price-block {
-      background-color: #2ecc71;
-      color: #ffffff;
-      padding: 5px 10px;
-      border-radius: 5px;
-      width: 100%;
-      text-align: center;
-    }
-      
+      h1 {
+        text-align: center;
+        font-size: 24px;
+        margin: 20px 0;
+      }
+      .line {
+        height: 2px;
+        background-color: white;
+        margin: 10px auto;
+        width: 80%;
+      }
+      .book-library {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
       .book {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 20px;
-        padding: 10px;
-        border-bottom: 1px solid #e0e0e0;
+        padding: 20px;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        background-color: #ffffff;
+        width: 80%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
       .book img {
-        max-width: 100%;
+        max-width: 200px;
         height: auto;
+        margin-bottom: 15px;
       }
       .book-title {
         font-size: 18px;
         font-weight: bold;
-        margin: 10px 0;
+        margin: 10px 0 5px;
         text-align: left;
-        align-self: flex-start;
+        width: 100%;
+        text-transform: uppercase;
       }
       .book-author {
         color: #777777;
-        margin-bottom: 10px;
+        font-size: 14px;
+        margin-bottom: 15px;
         text-align: left;
-        align-self: flex-start;
+        width: 100%;
       }
       .price-block {
         background-color: #2ecc71;
         color: #ffffff;
-        padding: 5px 10px;
+        padding: 10px;
         border-radius: 5px;
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
       }
     </style>
   </head>
   <body>
-    <!-- Add your HTML content here -->
-    <h1 style="text-align: center;">Book Library</h1>
+    <h1>Book Library</h1>
+    <div class="line"></div>
     <div class="book-library">
       <div class="book">
         <img
           src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Spy-in-the-Amber-by-Manohar-Malgonkar.jpg"
           alt="Spy in the Amber"
         />
-        <div class="book-title">SPY IN THE AMBER</div>
-        <div class="book-author">BY Manohar Malgonkar</div>
-        <div class="price-block">Rs.290</div>
+        <div class="book-title">Spy in the Amber</div>
+        <div class="book-author">By Manohar Malgonkar</div>
+        <div class="price-block">Rs. 299</div>
       </div>
       <div class="book">
         <img
           src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Sacred-Games-by-Vikram-Chandra.jpg"
-          alt="Sacred-Games-by-Vikram-Chandra"
+          alt="Sacred Games"
         />
         <div class="book-title">Sacred Games</div>
-        <div class="book-author">by Vikram Chandra</div>
-        <div class="price-block">Rs.199</div>
+        <div class="book-author">By Vikram Chandra</div>
+        <div class="price-block">Rs. 199</div>
       </div>
       <div class="book">
         <img
           src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Byomkesh-Bakshi-by-Sharadindu-Bandyopadhyay.jpg"
           alt="Byomkesh Bakshi"
         />
-        <div class="book-title">BYOMKESH BAKSHI</div>
+        <div class="book-title">Byomkesh Bakshi</div>
         <div class="book-author">By Sharadindu Bandyopadhyay</div>
-        <div class="price-block">Rs. 240</div>
+        <div class="price-block">Rs. 249</div>
       </div>
     </div>
   </body>
